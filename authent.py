@@ -7,7 +7,7 @@ import re
 
 def main():
     try:
-        conn = psycopg2.connect(host='82.67.90.50', dbname='postgres ', user='postgres ', password='|)r6>|}ST87B')
+        conn = psycopg2.connect(host='82.67.90.50', dbname='postgres ', user='postgres ', password='|)r6>|}ST87B', port = '5432')
     except Exception as e:
         print(e)
         sys.exit(1)
