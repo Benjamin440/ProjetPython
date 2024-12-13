@@ -1,5 +1,3 @@
-# Authenification via base de donnée postregres en python afin de se connecteur avec le user admin et pouvoir modifier les users
-
 import psycopg2
 import sys
 import os
@@ -9,10 +7,7 @@ import re
 
 def main():
     try:
-        conn = psycopg2.connect(
-            dbname='authenification',
-            password='password',
-        )
+        conn = psycopg2.connect(host='82.67.90.50', dbname='postgres ', user='postgres ', password='|)r6>|}ST87B')
     except Exception as e:
         print(e)
         sys.exit(1)
